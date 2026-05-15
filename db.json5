@@ -1,17 +1,1 @@
-{
-  tasks: [
-    {
-      title: 'купить молоко',
-      isDone: false,
-      id: 'WXjdxN9c1RM'
-    },
-
-    {
-      title: 'купить 123',
-      isDone: false,
-      id: '123'
-    },
-
-  ],
-  $schema: './node_modules/json-server/schema.json'
-}
+{tasks:[{title:'купить молоко',isDone:false,id:'WXjdxN9c1RM'},{title:'купить 123',isDone:false,id:'123'},{title:'123',isDone:false,id:'GcIp_YTW2yQ'}],$schema:'./node_modules/json-server/schema.json'}
