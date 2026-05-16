@@ -8,10 +8,10 @@ const addTaskForm = (props) => {
     styles,
   } = props
 
+  const [newTaskTitle, setNewTaskTitle] = useState('')
+
   const {
     addTask,
-    newTaskTitle,
-    setNewTaskTitle,
     newTaskInputRef,
   } = useContext(TasksContext)
 
@@ -24,7 +24,10 @@ const addTaskForm = (props) => {
     event.preventDefault()
 
     if (!isNewTaskTitleEmpty) {
-      addTask(clearNewTaskTitle)
+      addTask(
+        clearNewTaskTitle,
+        () => setNewTaskTitle('')
+        )
     }
   }
 
